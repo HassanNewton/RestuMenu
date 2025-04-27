@@ -1,0 +1,31 @@
+{
+  "dishes": [
+    {
+      "id": "1",
+      "name": "Chili Fries",
+      "price": 85,
+      "description": "Spicy appetizer",
+      "spiceLevel": 5
+    },
+    {
+      "id": "2",
+      "name": "Chocolate Cake",
+      "price": 60,
+      "description": "Rich dark chocolate",
+      "sweetnessLevel": 9
+    },
+    {
+      "id": "3",
+      "name": "Vegetarian Burger",
+      "price": 120,
+      "description": "A delicious veggie burger",
+      "vegetarian": true
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "password"
+    }
+  ]
+}

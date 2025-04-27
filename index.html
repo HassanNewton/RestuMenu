@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurang Meny</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Login Form -->
+    <div id="loginForm">
+      <h2>Login</h2>
+      <label for="username">Användarnamn:</label>
+      <input type="text" id="username" required />
+
+      <label for="password">Lösenord:</label>
+      <input type="password" id="password" required />
+
+      <button onclick="handleLogin()">Logga in</button>
+    </div>
+
+    <!-- Dish Form (Initially Hidden until logged in) -->
+    <form id="dishForm" style="display: none">
+      <label for="name">Namn:</label>
+      <input type="text" id="name" required />
+
+      <label for="price">Pris:</label>
+      <input type="number" id="price" required />
+
+      <label for="description">Beskrivning:</label>
+      <input type="text" id="description" required />
+
+      <label for="category">Kategori:</label>
+      <select id="category" required>
+        <option value="precourse">Förrätt</option>
+        <option value="maincourse">Huvudrätt</option>
+        <option value="dessert">Efterrätt</option>
+      </select>
+
+      <label for="extra">Extra Info:</label>
+      <input type="text" id="extra" />
+
+      <button type="submit">Lägg till rätt</button>
+      <button type="button" id="logOut">Logga ut</button>
+    </form>
+
+    <h2>Meny</h2>
+    <ul id="dishList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
